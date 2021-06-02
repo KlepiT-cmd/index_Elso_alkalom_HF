@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header {
+      font-size: 20px;
+
+  }
+  
+  #container {
+      margin: auto;
+      max-width: 400px;
+      padding: 20px;
+  }
+    
+  .form-wrap {
+        background: white;
+        padding: 20px;
+  }
+    
+  footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+  }
+    
+  main {
+
+  }
+
+  main h1 {
+      font-size: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  main h2 {
+      font-size: 24px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+
+  .jokes {
+      
+  }

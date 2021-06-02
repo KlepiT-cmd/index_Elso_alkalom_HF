@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="aurhor" content="Mutatkozz Be">
+    <title>CSS képzés 1. házi</title>
+    <base target="_blank">
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #deecc7;
+        }
+
+        header nav,
+        .footer-content {
+            width: 820px;
+            margin: 0 auto;
+        }
+
+        main {
+            width: 820px;
+            margin: auto;
+            background-color: #FFFFFF;
+            flex: 1;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="menu-list">
+            <li>
+                <a href="https://9gag.com/gag/aNpKPRr">9gag</a>
+            </li>
+            <li>
+                <a href="https://9gag.com/gag/a1r2Qv2">9gag</a>
+            </li>
+            <li>
+                <a href="https://9gag.com/gag/aqjW7GY">9gag</a>
+            </li>
+            <li>
+                <a href="https://9gag.com/gag/arMqgRV">9gag</a>
+            </li>
+            <li>
+                <a href="https://9gag.com/gag/aK6ejVj">9gag</a>
+            </li>
+        </ul>
+        <ul class="social-media-list">
+            <li>
+                <a href="https://www.facebook.com/">
+                    <span class="fa fa-facebook-official"></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/">
+                    <span class="fa fa-instagram"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="mainContent" class="main-content">
+    <h1>Vicces oldal (is lehetett volna)</h1>
+    <section class="jokes">
+        <article class="joke">
+            <h2>Hősünk vágyna egy hét nyugalomra</h2>
+            <p class="talking">Haver, hallom összevesztél az asszonnyal. Mi történt?</p>
+            <p class="talking">Nem tudtunk megegyezni a nyaralással kapcsolatban...</p>
+            <p class="talking">Hogyhogy?</p>
+            <p class="talking">Én mindenképpen a Kanári-szigetekre akarok menni, ő meg mindenáron velem akar jönni.</p>
+        </article>
+        <article class="joke">
+            <h2>Munkanélküliek</h2>
+            <p class="talking">Miért mennek a munkanélküliek a busz hátsó részébe?</p>
+            <p class="talking">Mert ki van írva: Leszállás a hátsó ajtónál</p>
+        </article>
+    </section>
+    <section class="jokes">
+        <article class="joke">
+            <h2>Székely a fogásznál</h2>
+            <p class="talking">Na Áron bátyám, jó fogat húztam-e ki?</p>
+            <p class="talking">Jót! Mert a fájós még megvan!</p>
+        </article>
+        <article class="joke">
+        </article>
+    </section>
+    <section class="riddles">
+        <h2>Találós kérdések</h2>
+        <table class="riddle-table">
+            <thead>
+            <tr>
+                <th>Kérdés</th>
+                <th>Válasz</th>
+                <th>Küldés</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Mi az: piros, berreg és nehéz lenyelni?</td>
+                <td>
+                    <div>
+                        <label for="answer1">Válasz:</label>
+                        <input id="answer1" pattern="[Tt]raktor" value="">
+                    </div>
+                </td>
+                <td>
+                    <button>
+                        <span class="fa fa-paper-plane-o"></span>
+                        <span>Küldés</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Mit eszik a kannibál rendőr?</td>
+                <td>
+                    <div>
+                        <label for="answer2">Válasz:</label>
+                        <input id="answer2" pattern="[Kk]örözöttet">
+                    </div>
+                </td>
+                <td>
+                    <button>
+                        <span class="fa fa-paper-plane-o"></span>
+                        <span>Küldés</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Kik laknak az üveg alján?</td>
+                <td>
+                    <div>
+                        <label for="answer3">Válasz:</label>
+                        <input id="answer3" pattern="[Bb]uborék">
+                    </div>
+                </td>
+                <td>
+                    <button>
+                        <span class="fa fa-paper-plane-o"></span>
+                        <span>Küldés</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Mi az: se keze, se feje, se lába?</td>
+                <td>
+                    <div>
+                        <label for="answer4">Válasz:</label>
+                        <input id="answer4" pattern="[Tt]örzsvendég">
+                    </div>
+                </td>
+                <td>
+                    <button>
+                        <span class="fa fa-paper-plane-o"></span>
+                        <span>Küldés</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Melyik a legkisebb favicc?</td>
+                <td>
+                    <div>
+                        <label for="answer5">Válasz:</label>
+                        <input id="answer5" pattern="[Ff]űrészpor"></div>
+                </td>
+                <td>
+                    <button>
+                        <span class="fa fa-paper-plane-o"></span>
+                        <span>Küldés</span>
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mi az: falon van és nem lát?</td>
+                <td>
+                    <div>
+                        <label for="answer6">Válasz:</label>
+                        <input id="answer6" pattern="[Vv]akolat">
+                    </div>
+                </td>
+                <td>
+                    <button>
+                        <span class="fa fa-paper-plane-o"></span>
+                        <span>Küldés</span>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <span>&copy; 2021 Nitro FE Team</span>
+    </div>
+</footer>
+</body>
+</html>

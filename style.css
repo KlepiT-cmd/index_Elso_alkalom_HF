@@ -5,42 +5,124 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  header {
+header {
       font-size: 20px;
-
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      background-color: #4e3c2a;
   }
+
+header nav:focus {
+    box-shadow: white;
+}
   
-  #container {
-      margin: auto;
-      max-width: 400px;
-      padding: 20px;
-  }
-    
-  .form-wrap {
-        background: white;
-        padding: 20px;
-  }
-    
-  footer {
-        margin-top: 10px;
-        margin-bottom: 10px;
-  }
-    
-  main {
-
+header a {
+      text-decoration: none;
+      color: white;
   }
 
-  main h1 {
+.menu-list li {
+      border: white solid 2px;
+      background-color: #a07a55;
+      list-style: none;
+      float: left;
+      padding: 10px 15px 10px 15px;
+  }
+
+header li:hover {
+      background-color: #f4a460;
+    }
+    
+header li:active {
+        background-color: #4e3c2a;
+    }
+
+.social-media-list li:focus {
+    box-shadow: white;
+}
+
+.social-media-list li {
+      list-style: none;
+      float: left;
+      padding: 10px 15px 10px 15px;
+      border-radius: 100%;
+      border: white solid 2px;
+      background-color: #a07a55;
+      list-style: none;
+      float: left;
+      position: right;
+    }
+    
+footer {
+    padding: 10px 20px 10px 20px;
+  }
+    
+main h1 {
       font-size: 30px;
       padding-top: 20px;
       padding-bottom: 20px;
+      text-align: center;
   }
-  main h2 {
+main h2 {
       font-size: 24px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: 15px 20px 15px 20px;
   }
 
-  .jokes {
-      
+.joke {
+      float: left;
+      width: 50%;
+    }
+    
+.row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+.joke p {
+    padding: 10px 20px 10px 20px;
   }
+
+.talking::before{
+      content: "- ";
+  }
+
+table, tr, td {
+    margin-bottom: 20px;
+    border: black solid 1px;
+    border-spacing: 0px;
+    padding: 5px 10px 5px 10px;
+}
+
+.riddle-table thead {
+    background-color: #a07a55;
+    color: white;
+    text-align: left;
+}
+
+button {
+    background-color: #a07a55;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+button:focus {
+    border: #4e3c2a solid 2px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #f4a460;
+}
+
+.riddle-table tbody tr:nth-child(even) {
+    background-color: #DDDDDD;
+}
+
+.riddle-table input {
+    
+}

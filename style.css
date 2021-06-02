@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: 'Roboto', sans-serif;
   }
-
+/**/
 header {
       font-size: 20px;
       padding-top: 10px;
@@ -121,8 +121,4 @@ button:hover {
 
 .riddle-table tbody tr:nth-child(even) {
     background-color: #DDDDDD;
-}
-
-.riddle-table input {
-    
 }

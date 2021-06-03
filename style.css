@@ -38,8 +38,9 @@ header li:active {
         background-color: #4e3c2a;
     }
 
-.social-media-list li:focus {
+header span:focus {
     box-shadow: white;
+    outline: none;
 }
 
 .social-media-list li {
@@ -69,11 +70,17 @@ main h2 {
       padding: 15px 20px 15px 20px;
   }
 
-.joke {
-      float: left;
-      width: 50%;
+article:nth-child(odd) {
+      flex: left;
+      max-width: 50%;
     }
-    
+
+
+article:nth-child(even) {
+      flex: right;
+      max-width: 50%;
+    }
+
 .row::after {
         content: "";
         display: table;
@@ -81,18 +88,37 @@ main h2 {
     }
     
 .joke p {
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
   }
 
 .talking::before{
       content: "- ";
   }
 
-table, tr, td {
-    margin-bottom: 20px;
-    border: black solid 1px;
+table, tr, td, th {
     border-spacing: 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+tr, td, th {
+    border: black solid 1px;
     padding: 5px 10px 5px 10px;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
 }
 
 .riddle-table thead {
@@ -121,4 +147,8 @@ button:hover {
 
 .riddle-table tbody tr:nth-child(even) {
     background-color: #DDDDDD;
+}
+
+input:invalid {
+    border: red solid 2px;
 }

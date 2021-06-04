@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: 'Roboto', sans-serif;
   }
-/**/
+
 header {
       font-size: 20px;
       padding-top: 10px;
@@ -12,10 +12,6 @@ header {
       text-decoration: none;
       background-color: #4e3c2a;
   }
-
-header:focus {
-    box-shadow: white;
-}
   
 header a {
       text-decoration: none;
@@ -44,11 +40,6 @@ li:focus {
     box-shadow: white 0px 0px 20px 5px;
 }
 
-header span:focus {
-    box-shadow: white;
-    outline: none;
-}
-
 .social-media-list li {
       border-radius: 100%;
       float: right;
@@ -72,15 +63,22 @@ main h2 {
       padding: 15px 20px 15px 20px;
   }
 
-.joke:nth-of-type(odd) {
-      flex: left;
-      width: 50%;
+.joke:first-of-type {
+      float: left;
+      max-width: 50%;
     }
 
-.joke:nth-of-type(even) { /*javítandó*/
-      float: right;
-      width: 50%;
-    }
+.joke:nth-of-type(2) {
+    padding-bottom: 125px;
+}
+
+section:last-of-type {
+    float: left;
+  }
+
+.riddles h2 {
+    float: left;
+}
     
 .joke p {
     padding: 5px 20px 5px 20px;
@@ -113,10 +111,6 @@ tr:last-of-type td:first-of-type {
 table, tr, td, th {
     border-spacing: 0px;
     padding: 0px 20px 20px 20px;
-}
-
-table input:focus {
-    background-color: #f4a460;
 }
 
 tr, td, th {
@@ -157,8 +151,20 @@ button:hover {
     background-color: #DDDDDD;
 }
 
+input:valid {
+    border: green solid 2px;
+}
+
+input:invalid {
+    border: red solid 2px;
+}
+
 input {
     flex: 1;
     width: 77%;
     padding-right: 5px;
+}
+
+input:focus {
+    background-color: #f4a460;
 }

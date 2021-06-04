@@ -115,6 +115,30 @@ tr, td, th {
     padding: 10px 5px 10px 5px;
 }
 
+td:nth-of-type(2):focus-within {
+    background-color: #f4a460;
+}
+
+label {
+    margin-right: 10px;
+}
+
+div {
+    display: flex;
+}
+
+input {
+    flex-grow: 1;
+}
+
+input:valid {
+    border: green solid 2px;
+}
+
+input:invalid {
+    border: red solid 2px;
+}
+
 .riddle-table thead {
     background-color: #a07a55;
     color: white;
@@ -136,30 +160,10 @@ button {
 }
 
 button:focus {
+    outline: none;
     border: #4e3c2a solid 2px;
 }
 
 button:hover {
-    background-color: #f4a460;
-}
-
-label {
-    margin-right: 10px;
-}
-
-input {
-    float: right;
-    width: 78%;
-}
-
-input:valid {
-    border: green solid 2px;
-}
-
-input:invalid {
-    border: red solid 2px;
-}
-
-input:focus {
     background-color: #f4a460;
 }

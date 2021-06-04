@@ -7,9 +7,7 @@
 
 header {
       font-size: 20px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-decoration: none;
+      padding: 10px 0 10px 0;
       background-color: #4e3c2a;
   }
   
@@ -27,11 +25,11 @@ header li {
       margin: 0 10px 0 0;
   }
 
-header li:hover {
+li:hover {
       background-color: #f4a460;
     }
     
-header li:active {
+li:active {
         background-color: #4e3c2a;
     }
 
@@ -50,12 +48,14 @@ li:focus {
     
 footer {
     padding: 10px 20px 10px 20px;
+    background-color: #4e3c2a;
+    color: white;
   }
     
 main h1 {
       font-size: 30px;
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 5px;
       text-align: center;
   }
 main h2 {
@@ -90,9 +90,11 @@ section:last-of-type {
 
 table {
     width: 820px!important;
+    border-spacing: 0px;
+    padding: 0px 20px 20px 20px;
 }
 
-  th:first-of-type {
+th:first-of-type {
     border-top-left-radius: 10px;
 }
 
@@ -108,24 +110,19 @@ tr:last-of-type td:first-of-type {
     border-bottom-left-radius: 10px;
 }
 
-table, tr, td, th {
-    border-spacing: 0px;
-    padding: 0px 20px 20px 20px;
-}
-
 tr, td, th {
     border: black solid 1px;
-    padding: 5px 10px 5px 10px;
-}
-
-table label {
-    padding-right: 10px;
+    padding: 10px 5px 10px 5px;
 }
 
 .riddle-table thead {
     background-color: #a07a55;
     color: white;
     text-align: left;
+}
+
+.riddle-table tbody tr:nth-child(even) {
+    background-color: #DDDDDD;
 }
 
 button {
@@ -138,17 +135,29 @@ button {
     float: right;
 }
 
+button span:nth-of-type(even) {
+    padding: 5px 10px 5px 0px;
+}
+
+button span:nth-of-type(odd) {
+    padding: 5px 0px 5px 10px;
+}
+
 button:focus {
     border: #4e3c2a solid 2px;
-    outline: none;
 }
 
 button:hover {
     background-color: #f4a460;
 }
 
-.riddle-table tbody tr:nth-child(even) {
-    background-color: #DDDDDD;
+label {
+    margin-right: 10px;
+}
+
+input {
+    float: right;
+    width: 78%;
 }
 
 input:valid {
@@ -157,12 +166,6 @@ input:valid {
 
 input:invalid {
     border: red solid 2px;
-}
-
-input {
-    flex: 1;
-    width: 77%;
-    padding-right: 5px;
 }
 
 input:focus {

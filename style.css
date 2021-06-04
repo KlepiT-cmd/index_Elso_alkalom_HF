@@ -135,14 +135,6 @@ button {
     float: right;
 }
 
-button span:nth-of-type(even) {
-    padding: 5px 10px 5px 0px;
-}
-
-button span:nth-of-type(odd) {
-    padding: 5px 0px 5px 10px;
-}
-
 button:focus {
     border: #4e3c2a solid 2px;
 }
